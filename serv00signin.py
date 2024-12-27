@@ -1,5 +1,5 @@
 from DrissionPage import Chromium, ChromiumOptions
-import logging
+import logging,os
 def logging_init():
   # 创建一个logger对象
   logger = logging.getLogger('my_logger')
