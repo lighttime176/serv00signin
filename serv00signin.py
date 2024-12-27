@@ -44,7 +44,7 @@ for i in range(0, len(elements), 2):
     ele = tab.ele('css=#submit')
     ele.click()
     ele = tab.ele('css=#dashboard > div.row.content-row > div:nth-child(1) > div > table > tbody > tr.noborder > td:nth-child(2)')
-    logger.info(ele)
+    logger.info(ele.text)
     time.sleep(10)
 
     browser.quit()
