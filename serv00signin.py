@@ -43,7 +43,7 @@ for i in range(0, len(elements), 2):
     ele.input(password)
     ele = tab.ele('css=#submit')
     ele.click()
-    ele = tab.ele('css=#menu > div > ul > li.active > a > span')
+    ele = tab.ele('css=#dashboard > div.row.content-row > div:nth-child(1) > div > table > tbody > tr.noborder > td:nth-child(2)')
     logger.info(ele)
     time.sleep(10)
 
