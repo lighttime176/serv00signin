@@ -1,5 +1,5 @@
 from DrissionPage import Chromium, ChromiumOptions
-import logging,os
+import logging,os,time
 def logging_init():
   # 创建一个logger对象
   logger = logging.getLogger('my_logger')
@@ -45,7 +45,7 @@ for i in range(0, len(elements), 2):
     ele.click()
     ele = tab.ele('css=#menu > div > ul > li.active > a > span')
     logger.info(ele)
-
+    time.sleep(10)
 
     browser.quit()
   
