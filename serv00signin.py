@@ -38,7 +38,13 @@ for i in range(0, len(elements), 2):
     logger.info('打开url')
     tab.get('https://panel14.serv00.com/login/')
     ele = tab.ele('css=#id_username')
-    print(ele)
+    ele.input(username)
+    ele = tab.ele('css=#id_password')
+    ele.input(password)
+    ele = tab.ele('css=#submit')
+    ele.click()
+    ele = tab.ele('css=#menu > div > ul > li.active > a > span')
+    logger.info(ele)
 
 
     browser.quit()
