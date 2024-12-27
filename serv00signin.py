@@ -24,7 +24,7 @@ def logging_init():
   return logger
 logger = logging_init()
 token = os.environ.get("ydyp")
-elements = data.split(',')
+elements = token.split(',')
 for i in range(0, len(elements), 2):
     username = elements[i]
     password = elements[i+1]
